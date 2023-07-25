@@ -1,0 +1,99 @@
+
+#im{
+  width: 15px;
+
+}
+#ime{
+    width: 50px;
+    margin-right:px; 
+  }
+  #ma{
+
+    margin-left:90px; 
+    margin-top: -20px;
+  }
+  #mo{
+
+    margin-left:60px; 
+    margin-top: -17px;
+  }
+
+  #mo{
+
+    margin-left:60px; 
+    margin-top: -17px;
+  }
+  #le{
+   color:  rgb(10, 245, 57);
+   font-size: 80px;
+   font-weight: 500;
+   margin-left: 75px;
+  }
+
+  #be{
+    margin-left: 110px; 
+    margin-top: -70px;
+  }
+  #se{
+    font-size: 15px;
+    color: red;
+    font-weight: 600;
+  }
+
+  #ec{
+    color:  rgb(10, 245, 57);
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 80px;
+  }
+  #ef{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 110px;
+    margin-top: -32px;
+  }
+  #eg{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  #fo{
+    background-color: rgb(10, 245, 57);
+  }
+  #es{
+    border: none;
+  }
+  #az{
+    width: 400px;
+  }
+  #ed{
+    background-color: rgb(10, 245, 57);
+  }
+  #di{
+    font-size: 20px;
+   color: white;
+  }
+  #im1{
+    width: 40px;
+    padding-right: 10px;
+  }
+  #fa{
+    width: 175px;
+    height: 200px;
+  }
+  #ab{
+    color: white;
+  }
+  .dropdown-menu a:hover {
+    background-color: rgb(29, 0, 248); /* Changer la couleur de fond au survol */
+    color: black; /* Changer la couleur du texte au survol */
+  }
+
+  #a2 {
+    color: black;
+    text-decoration: none;
+  }
+ 
+    
+  
+
