@@ -15,38 +15,37 @@
        <div id="le">
            | 
          </div>
-        <div id="be">
-         Bienvenue sur l'appli de <br>
-         Université NAZI/BONI 
-       </div>
+        <h1 id="be">
+         MENU
+       </h1>
 
        <div class='d-flex mt-5' >
-        <img src="{{ asset('image/accueil.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/accueil.jpg')}}" alt="" id='im1'> -->
         <a id="a2"  href="{{route('administ')}}">Accueil</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/secretaire.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/secretaire.jpg')}}" alt="" id='im1'> -->
         <a id="a2"  href="{{route('admin')}}">Sécretaire</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/etudiant.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/etudiant.jpg')}}" alt="" id='im1'> -->
         <a id="a2" class='text-primary' href="">Etudiant</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/carte.webp')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/carte.webp')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Carte</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/Gmail.png')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/Gmail.png')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Envoyer un mail</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/deconnexion.png')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/deconnexion.png')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Deconnexion</a>
        </div>       
     </div>
@@ -151,7 +150,7 @@
         <select class="form-control" name="niveau_detude" required>
             <option value="">Sélectionner un niveau d'étude</option>
             @foreach ($niveaux as $niveau)
-                <option value="{{ $niveau->id }}">{{ $niveau->libelle_filiere}}</option>
+                <option value="{{ $niveau->id }}">{{ $niveau->libelle_niveau}}</option>
             @endforeach
         </select>
     </div>

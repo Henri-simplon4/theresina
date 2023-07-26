@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('niveaux', function (Blueprint $table) {
             $table->id();
-            $table->string('libelle_filiere');
+            $table->string('libelle_niveau');
             $table->timestamps();
         });
     }

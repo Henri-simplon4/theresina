@@ -9,6 +9,6 @@ class Niveau extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'libelle_filiere',
+        'libelle_niveau',
     ];
 }

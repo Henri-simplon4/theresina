@@ -21,14 +21,14 @@
   }
 </style>
 <header class=" row">
-  <div class="p-1 text-center bg-success">
+  <div class="p-1 text-center">
         <img id="im" src="{{ asset('image/phone.png')}} " alt=""> +226 57 53 14 41
     </div>
     <div class="p- text-center"  id="he">
         <div class="container-fluid">
         <div class="row">
             <div class="col-3">
-                <img id="ime"  src="{{ asset('image/univbobo.png')}}" alt="">
+                <img id="ime"  src="{{ asset('image/logo.jpg')}}" alt="">
                Université 
                <div id="mo">
                NAZI/BONI
@@ -50,9 +50,9 @@
        
        
     </div>
-    <div class="p-2 text-center bg-success"  >
+    <div class="p-2 text-center bg-danger"  >
 <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Connexion
   </button>
   <ul class="dropdown-menu bg-dark">
@@ -83,7 +83,7 @@
 
 
 </div>
-<div  class="text-center p-4 mt-3 bg-success">
+<div  class="text-center p-4 mt-3 bg-dark">
   <p class="text-white"> 
     Copyritgh @ Tous les droits sont reserver 2023
   </p>

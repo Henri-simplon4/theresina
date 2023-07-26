@@ -15,38 +15,37 @@
        <div id="le">
            | 
          </div>
-        <div id="be">
-         Bienvenue sur l'appli de <br>
-         Université NAZI/BONI 
-       </div>
+        <H1 id="be">
+         MENU
+       </H1>
 
        <div class='d-flex mt-5' >
-        <img src="{{ asset('image/accueil.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/accueil.jpg')}}" alt="" id='im1'> -->
         <a id="a2"  href="{{route('administ')}}">Accueil</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/secretaire.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/secretaire.jpg')}}" alt="" id='im1'> -->
         <a id="a2" class='text-primary' href="">Sécretaire</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/etudiant.jpg')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/etudiant.jpg')}}" alt="" id='im1'> -->
         <a id="a2"  href="{{route('etude')}}">Etudiant</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/carte.webp')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/3.png')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Carte</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/Gmail.png')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/Gmail.png')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Envoyer un mail</a>
        </div>
 
        <div class='d-flex mt-3'>
-        <img src="{{ asset('image/deconnexion.png')}}" alt="" id='im1'>
+        <!-- <img src="{{ asset('image/deconnexion.png')}}" alt="" id='im1'> -->
         <a id="a2"  href="">Deconnexion</a>
        </div>        
     </div>

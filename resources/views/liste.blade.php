@@ -17,7 +17,7 @@
          </div>
         <div id="be">
          Bienvenue sur l'appli de <br>
-         Université NAZI/BONI 
+         CAMPUSCarte
        </div>
 
        <div class='d-flex mt-5' >
@@ -59,8 +59,8 @@
    </button>
 
    <table class="container table table-responsive mt-3 table-bordered border-dark">
+    <thead>
    <tr class="table-dark">
-        <th>N</th>
         <th>Matricule</th>
         <th>Nom</th>
         <th>Prenom</th>
@@ -69,6 +69,20 @@
         <th>Année </th>
         <th>Action</th>
     </tr>
+    </thead>
+<tbody>
+  @foreach ($etudiant as $etudiant)
+  <tr>
+    <td>{{$etudiant->matricule}}</td>
+    <td>{{$etudiant->nom}}</td>
+    <td>{{$etudiant->prenom}}</td>
+    <td>{{$etudiant->cycle}}</td>
+    <td>{{$etudiant->niveau_detude}}</td>
+    <td>{{$etudiant->annee_accademique}}</td>
+    <td><a href="" class="btn">Modifier</a></td>
+  </tr>
+  @endforeach
+</tbody>
     </table>
      </div>
  </div>

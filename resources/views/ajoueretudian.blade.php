@@ -146,7 +146,7 @@
         <select class="form-control" name="niveau_detude" required>
             <option value="">Sélectionner un niveau d'étude</option>
             @foreach ($niveaux as $niveau)
-                <option value="{{ $niveau->id }}">{{ $niveau->libelle_filiere}}</option>
+                <option value="{{ $niveau->id }}">{{ $niveau->libelle_niveau}}</option>
             @endforeach
         </select>
     </div>

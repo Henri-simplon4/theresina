@@ -21,14 +21,14 @@
   }
 </style>
 <header class=" row">
-  <div class="p-1 text-center bg-success">
+  <div class="p-1 text-center bg-white">
         <img id="im" src="{{ asset('image/phone.png')}} " alt=""> +226 57 53 14 41
     </div>
     <div class="p- text-center"  id="he">
         <div class="container-fluid">
         <div class="row">
             <div class="col-3">
-                <img id="ime"  src="{{ asset('image/univbobo.png')}}" alt="">
+                <img id="ime"  src="{{ asset('image/logo.jpg')}}" alt="" width="70px" heigth="70px">
                Université 
                <div id="mo">
                NAZI/BONI
@@ -50,14 +50,14 @@
        
        
     </div>
-    <div class="p-3 bg-success"  >
+    <div class="p-3 bg-danger"  >
       <div class="row">
       <div class="col-1 offset-3">
    <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     cycle
   </button>
-  <ul class="dropdown-menu bg-primary-subtle">
+  <ul class="dropdown-menu bg-danger-subtle">
       <form action="{{url('/ajout-cycle')}}" method='post' class='form'>
       @method('post')
            @csrf
@@ -65,7 +65,7 @@
               <label for="">Nom</label>
               <input type="text" name='libelle_cycle' class="form-control " value="{{ old('nom') }}" required >
           </div>
-        <button type="submit" class='btn btn-secondary mt-3'>Ajouter</button>
+        <button type="submit" class='btn btn-primary mt-3'>Ajouter</button>
     </form>
   </ul>
 </div>
@@ -74,11 +74,11 @@
 
    <div class="col-1 ">
    <div class="dropdown ">
-  <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Filiere
   </button>
-  <ul class="dropdown-menu bg-primary-subtle">
-      <form action="" method='post' class='form'>
+  <ul class="dropdown-menu bg-dark-subtle">
+      <form action="{{url('/ajout-filiere')}}" method='post' class='form'>
       @method('post')
            @csrf
            <div class='form-group mt-3'>
@@ -93,16 +93,16 @@
 
    <div class="col ">
    <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Niveau d'étude
   </button>
-  <ul class="dropdown-menu bg-primary-subtle">
-      <form action="" class='form' method='post'>
+  <ul class="dropdown-menu bg-dark-subtle">
+      <form action="{{url('/ajout-niveau')}}" class='form' method='post'>
         @method('post')
            @csrf
            <div class='form-group mt-3'>
               <label for="">Niveau</label>
-              <input type="text" name='libelle_filiere' class="form-control " value="{{ old('niveau_detude') }}" required >
+              <input type="text" name='libelle_niveau' class="form-control " value="{{ old('niveau_detude') }}" required >
           </div>
         <button type="submit" class='btn btn-secondary mt-3'>Ajouter</button>
     </form>
@@ -124,7 +124,7 @@
 
 
 </div>
-<div  class="text-center p-4 mt-3 bg-success">
+<div  class="text-center p-4 mt-3 bg-dark">
   <p class="text-white"> 
     Copyritgh @ Tous les droits sont reserver 2023
   </p>

@@ -15,10 +15,9 @@
        <div id="le">
            | 
          </div>
-        <div id="be">
-         Bienvenue sur l'appli de <br>
-         Université NAZI/BONI 
-       </div>
+        <h1 id="be">
+       MENU  
+</h1>
 
        <div class='d-flex mt-5' >
         <img src="{{ asset('image/accueil.jpg')}}" alt="" id='im1'>
@@ -32,7 +31,7 @@
 
        <div class='d-flex mt-3'>
         <img src="{{ asset('image/carte.webp')}}" alt="" id='im1'>
-        <a id="a2"  href="">Carte</a>
+        <a id="a2"  href="{{route('liste-etudiant')}}">Liste</a>
        </div>
 
        <div class='d-flex mt-3'>

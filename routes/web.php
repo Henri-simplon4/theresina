@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('accueil');
 });
 Route::get('/accueil' ,[AppliControllers::class , 'index' ])->name('accuiel');
 Route::get('/connexion' ,[AppliControllers::class , 'connec' ])->name('connec');
@@ -39,16 +39,18 @@ Route::get('/ajoueretude' ,[AppliControllers::class , 'etudee' ])->name('etudee'
 Route::post('/admin', [AppliControllers::class, 'niveau'])->name('secre');
 Route::post('/admin', [AppliControllers::class, 'cylclee'])->name('cycl');
 Route::post('/admin', [AppliControllers::class, 'filier'])->name('fillie');
+Route::post('/ajout-cycle', [AppliControllers::class, 'cylcle'])->name('cycle');
+Route::post('/ajout-filiere', [AppliControllers::class, 'filier'])->name('cycle');
+Route::post('/ajout-niveau', [AppliControllers::class, 'niveau'])->name('cycle');
+Route::get('liste-etudiant', [AppliControllers::class, 'liste'])->name('liste-etudiant');
+
+Route::get('/admin' ,[AppliControllers::class , 'admi' ])->name('administ');
 //enregistremen etudiant
 Route::post('/etudiant', [AppliControllers::class, 'etudian'])->name('yaroma');
-
 Route::middleware('auth')->group(function () {
     // Mettez ici toutes les routes que vous voulez limiter à l'accès aux utilisateurs connectés
-    Route::get('/admin' ,[AppliControllers::class , 'admi' ])->name('administ');
+   
     Route::get('/secretaire' ,[AppliControllers::class , 'secretair' ])->name('secretaire');
-    Route::post('/ajout-cycle', [AppliControllers::class, 'cylcle'])->name('cycl');
-
-    // Ajoutez autant de routes que nécessaire
 });
 // Route::get('/login', function () {
 //     // Your login page logic here

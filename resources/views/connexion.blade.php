@@ -36,7 +36,7 @@
 
                         <p class="mt-2"><a href="">Mot de passe oublié ?</a></p>
 
-                        <button type="submit" class='btn btn-dark mt-3'>Connexion</button>
+                        <button type="submit" class='btn btn-danger mt-3'>Connexion</button>
                     </form>
                 <p>Pas inscrit(e) <a href="{{route('insc')}}">Inscrivez-vous</a></p>
            </div>

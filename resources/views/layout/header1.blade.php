@@ -19,10 +19,10 @@
     padding: 0px;
   }
 </style>
-<header class=" row p-4 bg-success" id='ed' >
+<header class=" row p-4 bg-danger" id='ed' >
         <div class="row">
             <div class="col-12 text-center" id='di'>
-                <img id="ime"  src="{{ asset('image/univbobo.png')}}" alt="">
+                <img id="ime"  src="{{ asset('image/logo.jpg')}}" alt="">
                Université   NAZI/BONI
               
             </div>
@@ -38,7 +38,7 @@
 
 
 </div>
-<div  class="text-center p-4 mt-3 bg-success" id="fo">
+<div  class="text-center p-4 mt-3 bg-dark" id="fo">
   <p class="text-white">
       Copyritgh @ Tous les droits sont reserver 2023 
   </p>

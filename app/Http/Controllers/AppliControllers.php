@@ -138,7 +138,7 @@ class AppliControllers extends Controller
     public function niveau(Niveau $niveau, Request $request)
     {
         $niveau = new Niveau();
-        $niveau->libelle_filiere = $request->input('libelle_filiere');
+        $niveau->libelle_niveau = $request->input('libelle_niveau');
         $niveau->save();
         return redirect()->back()->with('success', 'Données enregistrées avec succès. !');
     }
@@ -251,5 +251,12 @@ class AppliControllers extends Controller
 $cycles = Cycle::all(); // Assuming you have a model named Cycle for academic cycles
 
     return view('ajouteretu', compact('filiers', 'cycles')); // Pass the $filiers and $cycles variables to the view
+}
+
+public function liste()
+{
+    $etudiant = Etudiant::all(); // Fetch all the filieres from the database
+
+    return view('liste', compact('etudiant')); // Pass the $filiers and $cycles variables to the view
 }
 }
